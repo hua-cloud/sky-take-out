@@ -44,9 +44,9 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     @Bean
     public Docket docket() {
         ApiInfo apiInfo = new ApiInfoBuilder()
-                .title("苍穹外卖项目接口文档")
-                .version("2.0")
-                .description("苍穹外卖项目接口文档")
+                .title("天空外卖项目接口文档")
+                .version("1.0")
+                .description("天空外卖项目接口文档")
                 .build();
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo)

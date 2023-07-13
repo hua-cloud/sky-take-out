@@ -13,10 +13,10 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ApiModel(description = "员工登录返回的数据格式")
+@ApiModel(description = "员工登录返回的数据模型")
 public class EmployeeLoginVO implements Serializable {
 
-    @ApiModelProperty("主键值")
+    @ApiModelProperty("id(主键值)")
     private Long id;
 
     @ApiModelProperty("用户名")
