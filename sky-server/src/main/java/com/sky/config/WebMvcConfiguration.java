@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.cbor.MappingJackson2CborHttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
@@ -72,16 +73,17 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     }
 
     /**
-     * 扩展Spring MVC的消息转换器
+     * 扩展Spring MVC框架的消息转化器
      * @param converters
      */
+    @Override
     protected void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-        log.info("扩展消息转换器");
-        // 创建一个消息转换器对象
-        MappingJackson2CborHttpMessageConverter converter = new MappingJackson2CborHttpMessageConverter();
-        // 需要为消息转换器设置一个对象转换器，对象转换器可以将Java对象序列化为Json串
+        log.info("扩展消息转换器...");
+        // 创建一个消息转换器
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+        // 需要为消息转换器设置一个对象转化器,对象转化器可以将对象序列化为JSON串
         converter.setObjectMapper(new JacksonObjectMapper());
-        // 将自己的消息转换器加入到容器中
+        // 将自己的消息转化器加入到容器中
         converters.add(0,converter);
     }
 }

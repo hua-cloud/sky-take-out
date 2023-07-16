@@ -1,12 +1,9 @@
 # sky-take-out
 
-
 ![Author](https://img.shields.io/badge/Author-hua-red.svg "Author")
 ![hexo](https://img.shields.io/badge/Java-1.8+-blue.svg)
 ![hexo](https://img.shields.io/badge/Maven-3.8.5-yellow.svg)
 ![hexo](https://img.shields.io/badge/Spring_Boot-2.7.3-green.svg)
-
-
 
 ## 项目介绍
 `sky-take-out`项目是一套为商家定制的点餐外卖系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现，采用Docker容器化部署。前台商城系统包含首页门户、
