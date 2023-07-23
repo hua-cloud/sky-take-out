@@ -47,8 +47,8 @@ public class JwtTokenAdminInterceptor implements HandlerInterceptor {
             log.info("jwt校验:{}", token);
             Claims claims = JwtUtil.parseJWT(jwtProperties.getAdminSecretKey(), token);
             Long empId = Long.valueOf(claims.get(JwtClaimsConstant.EMP_ID).toString());
-            log.info("当前员工id：", empId);
-            // 将当前用户的id存入到ThreadLocal创建的存储空间中
+            log.info("当前员工id: {}", empId);
+            // 将当前用户的id存入到当前线程的ThreadLocalMap中，用于实现在线程内部的参数共享
             BaseContext.setCurrentId(empId);
             //3、通过，放行
             return true;

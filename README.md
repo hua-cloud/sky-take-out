@@ -1,7 +1,7 @@
 # sky-take-out
 
 ![Author](https://img.shields.io/badge/Author-hua-red.svg "Author")
-![hexo](https://img.shields.io/badge/Java-1.8+-blue.svg)
+![hexo](https://img.shields.io/badge/Java-17-blue.svg)
 ![hexo](https://img.shields.io/badge/Maven-3.8.5-yellow.svg)
 ![hexo](https://img.shields.io/badge/Spring_Boot-2.7.3-green.svg)
 
@@ -69,6 +69,5 @@
 ### 开发进度表
 <img src="./sky-server/src/main/resources/images/功能开发进度表.jpg" width="378px" height="417px">
 
-### 1.[SQL文件](https://github.com/hua-cloud/sky-take-out/blob/master/sky-server/src/main/resources/sql/sky.sql)
-
-### 2.[数据库设计文档](https://github.com/hua-cloud/sky-take-out/blob/master/sky-server/src/main/resources/sql/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
+附:1.[SQL文件](https://github.com/hua-cloud/sky-take-out/blob/master/sky-server/src/main/resources/sql/sky.sql)
+2.[数据库设计文档](https://github.com/hua-cloud/sky-take-out/blob/master/sky-server/src/main/resources/sql/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
