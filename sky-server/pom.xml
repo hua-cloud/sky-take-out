@@ -11,13 +11,13 @@
     <artifactId>sky-server</artifactId>
     <!-- 即便父工程中已经导入了相关的依赖项，但必须在子工程中声明才可以使用 -->
     <dependencies>
-
+        <!-- 将 sky-common模块作为依赖导入 -->
         <dependency>
             <groupId>com.sky</groupId>
             <artifactId>sky-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <!-- 将 sky-pojo模块作为依赖导入 -->
         <dependency>
             <groupId>com.sky</groupId>
             <artifactId>sky-pojo</artifactId>
