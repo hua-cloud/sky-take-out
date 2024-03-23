@@ -3,14 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
         <version>2.7.3</version>
     </parent>
+
     <groupId>com.sky</groupId>
     <artifactId>sky-take-out</artifactId>
-    <packaging>pom</packaging><!-- 父工程的打包方式必须为pom -->
+    <packaging>pom</packaging><!-- 父工程的打包方式为pom -->
     <version>1.0-SNAPSHOT</version>
     <!-- 聚合三个子工程 -->
     <modules>
@@ -34,6 +36,8 @@
         <poi>3.16</poi>
     </properties>
 
+    <!-- <dependencyManagement> 元素只是声明依赖及其版本号，但不会实际引入这些依赖到项目中
+         如果想要在子模块中使用这些依赖，还需要在子模块的pom中显示的引入相应的依赖， -->
     <dependencyManagement>
         <dependencies>
             <!-- mybatis -->
