@@ -10,6 +10,7 @@ import java.io.Serializable;
 @Data
 public class UserLoginDTO implements Serializable {
 
+    // 小程序中用户登录时获取的 code
     private String code;
 
 }
